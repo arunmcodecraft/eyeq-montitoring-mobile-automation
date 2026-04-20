@@ -1,0 +1,13 @@
+{
+  "validUser": {
+    "username": "demo.user@example.com",
+    "password": "Password123!"
+  },
+  "invalidUser": {
+    "username": "invalid.user@example.com",
+    "password": "InvalidPassword"
+  },
+  "dashboard": {
+    "expectedIdentifier": "Dashboard"
+  }
+}
