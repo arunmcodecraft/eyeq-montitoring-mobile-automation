@@ -44,10 +44,12 @@ mobile-e2e-framework/
 |   |   |-- encryption/
 |   |   |   `-- crypto.util.js
 |   |   `-- helpers/
+|   |       |-- dataReader.util.js
 |   |       |-- wait.util.js
 |   |       `-- gesture.util.js
 |   |-- data/
 |   |   |-- testData.json
+|   |   |-- loginData.csv
 |   |   `-- credentials.enc.json
 |   `-- cucumber/
 |       |-- parameterTypes.js
@@ -78,10 +80,28 @@ npm install
 
 Update the values in [.env](D:\Project\EyeQAutomation\mobile-e2e-framework\.env):
 
+- `APPIUM_HOST`
+- `APPIUM_PORT`
+- `APPIUM_PATH`
+- `START_APPIUM_SERVICE`
+- `WDIO_LOG_LEVEL`
+- `DEFAULT_WAIT_TIMEOUT`
+- `NEW_COMMAND_TIMEOUT`
+- `ANDROID_AUTOMATION_NAME`
+- `ANDROID_DEVICE_NAME`
 - `ANDROID_PLATFORM_VERSION`
+- `ANDROID_APP_PATH`
 - `ANDROID_APP_PACKAGE`
 - `ANDROID_APP_ACTIVITY`
+- `ANDROID_NO_RESET`
+- `IOS_AUTOMATION_NAME`
+- `IOS_DEVICE_NAME`
+- `IOS_PLATFORM_VERSION`
+- `IOS_APP_PATH`
+- `IOS_BUNDLE_ID`
+- `IOS_NO_RESET`
 - `CREDENTIAL_SECRET`
+- `TAGS`
 
 The Android APK path is already set to:
 
@@ -96,6 +116,13 @@ START_APPIUM_SERVICE=true
 ```
 
 Otherwise, start Appium manually before running tests.
+
+For iOS placeholder execution, update:
+
+- `IOS_DEVICE_NAME`
+- `IOS_PLATFORM_VERSION`
+- `IOS_APP_PATH`
+- `IOS_BUNDLE_ID`
 
 ## Test Data
 
